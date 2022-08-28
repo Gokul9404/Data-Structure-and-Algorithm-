@@ -1,0 +1,31 @@
+Graph Representation :- done by Vertex and Edge list
+
+Vertex list         
+A
+B
+C
+D
+E
+F
+G
+H
+
+Edge list
+A-B         // THIS IS THE
+A-D         // CONNECTION BTW
+A-C         // THE NODES/VERTEICES
+B-F         // AS '-' REPRESENTS 
+B-E         // AN EDGE BTW
+D-H         // THE VERTEICES
+C-G         // AND, THE CONNECTION
+F-H         // HERE BY EDGES
+E-H         // IS UNDIRECTED
+G-H         // CONNECTION
+
+-------------------------------------------------
+::::Finding connection btw Vertices on this representation of Graph:-
+::the time operation for finding the connection will be:-    O(size of Edge list)
+    the size of Edge list :- no of edges => 0 <= edges <= n*n {n = no of vertices}
+    thus, the size of Edge list :- no. of vertices * no. of vertices
+::therefore, time-complexcity to find connection btw vertices will be in :- O(n^2)
+-------------------------------------------------

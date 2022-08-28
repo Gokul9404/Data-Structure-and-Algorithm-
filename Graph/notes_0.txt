@@ -1,0 +1,71 @@
+What is a graph?
+A graph is an ordered pai of a set V of vertices and a set E of edges
+    G = (V, E)
+    |V| => number of vertices
+    |E| => number of edges
+
+What is edge?
+A connection between two noddes is called edge.
+There are two types of edges:
+    Directed edge   :- A connection from one node to another,but uni-directional.
+                       A graph having only Directed edge is called Directed graph or Di-graph.
+
+    Undirected edge :- A connection b/w nodes that is bi-directional.
+                       A graph having Undirected edge is called Undirected graph.
+-------------------------------------------------
+::EDGES::
+Weighted and Unweighted edges:-
+Weighted edges are edges having different weight or value on-themselves.
+Unweighted edges are edges having same weight on-themselves.
+
+self-loop   :- An edge having same origin and end point.
+
+Multi-edges :- Connection b/w one node to another node by mutiple-edge, it can be either Directed or Undirected edges
+
+::No of Edges in a Simple-Graph::
+::For Directed Graph:-
+    V = {v1, v2, v3, v4}
+    |V| => 4 or n
+    here, no. of edges will :: 0 <= |E| <= 4*(4-1) or n(n-1)[for Directed graph]
+
+::For Undirected Graph:-
+    V = {v1, v2, v3, v4}
+    |V| => 4 or n
+    here, no. of edges will :: 0 <= |E| <= (4*(4-1))/2 or (n*(n-1)/2) [for undirected graph]
+    E = { {v1,v2}, {v1,v3}, {v1,v4}, {v2,v3}, {v2,v4}, {v3,v4} }
+
+:::SPECIAL NOTE:::
+If no of edges are close to maximum no of edges possible, then it is called Dense
+If no of edges are close to minimum no of edges possible, then it is called Sparse
+:::------------:::
+-------------------------------------------------
+::Path in a Graph or Walk:-
+A sequence of vertices where each adjacent pair is connected by an edge
+
+:Simple Path:-
+A path / Walk in which no vertices and edges are not repeated.
+
+:Trail:-
+A walk in which no edges are repeated, vertices can be repeated.
+
+:Closed walk:-
+A walk that starts and ends at the same vertex is called closed walk.
+
+:Simple-Cycle:-
+A closes walk in which only start and end vertices can repeat.(Or other than start and end vertices no other vertices can repeats.) 
+
+::Length of a Walk/path ==> No of edges that are in the Path/Walk. (It's length is always greater than 0.)
+
+-------------------------------------------------
+:::Graph Connection:::
+
+::Strongly Connected Graph:-
+If there is path from any vertex to any other vertex.
+
+::Connected:-
+If there is path in the graph, to go from any vertex to any other vertex.
+
+::Weakly Connected:-
+If a directed graph can to turned into connected graph if we treate each edge as undirected, then this type of graph is called Weakly Connected.
+-------------------------------------------------
+
