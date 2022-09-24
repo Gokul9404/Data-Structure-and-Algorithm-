@@ -1,0 +1,66 @@
+/*
+:: What is Spanning Tree?
+A spanning tree is a subset of Graph G, which has all the vertices covered with minimum possible number of edges.
+Hence, a spanning tree does not have cycles and it cannot be disconnected.
+:=: When we convert a graph into a tree, the tree derived from graph is called spanning tree. :=:
+
+:: Properites of spanning tree ::
+  -> There can be more than one spanning tree of a connected graph G.
+  -> A spanning tree does not have any cycles or loop.
+  -> A spanning tree is minimally connected, so removing one edge from the tree will make the graph disconnected.
+  -> A spanning tree is maximally acyclic, so adding one edge to the tree will create a loop.
+:: Mathematical Properties ::
+  -> There can be a maximum n^(n-2) number of spanning trees that can be created from a complete graph.
+  -> A spanning tree has n-1 edges, where 'n' is the number of nodes.
+  -> If the graph is a complete graph, then the spanning tree can be constructed by removing maximum (e-n+1) edges
+    ,where 'e' is the number of edges and 'n' is the number of vertices.
+----------------------------------------------------------------------------------------------------
+What is Minimum Spanning tree?
+It is type of spanning tree in which the total weight of the tree is least compared to every-other possible spanning tree.  
+A spanning tree with the least wieght.
+
+What is Maximum Spanning tree?
+It is type of spanning tree in which the total weight of the tree is the most compared to every-other possible spanning tree.  
+A spanning tree with the most wieght.
+*/
+//--------------------------------------------------------------------------------------------------
+/*
+    E.g. -> Take below graph for MST understanding.
+            B ---8--- D ---7--- G   
+          /4|         | \       |\
+         /  |        2|  \      | \9
+        A   |11       E    \4   |   I
+         \  |  ---7---|      \  | /
+          \8| /       |6      \ |/10
+            C ---1--- F ---2--- H
+===========================================================
+    Minimim Spanning Tree for this graph will be:-
+                B ---8--- D ---7--- G   
+              /4          | \        \
+             /           2|  \        \9
+            A             E    \4       I
+                                 \  
+                                  \ 
+                C ---1--- F ---2--- H
+    --------------------OR--------------------        
+                B ---8--- D ---7--- G   
+                          | \        \
+                         2|  \        \9
+            A             E    \4       I
+             \ 8                 \  
+              \                   \ 
+                C ---1--- F ---2--- H
+        Total weight of the tree is :: 38        
+===========================================================
+    Maximum Spanning Tree for this graph will be:-
+                B ---8--- D ---7--- G   
+                |                   |
+                |                   |
+            A   |11       E         |14 I
+             \  |  ---7---|         |  /
+              \8| /       |6        |/10
+                C         F         H
+            
+        Total weight of the tree is :: 71
+*/
+//--------------------------------------------------------------------------------------------------
