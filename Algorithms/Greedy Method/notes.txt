@@ -1,0 +1,30 @@
+Greedy Method
+The greedy method is one of the strategies like Divide and conquer used to solve the problems. This method is used for solving optimization problems.
+An optimization problem is a problem that demands either maximum or minimum results. 
+The Greedy method is the simplest and straightforward approach.
+It is not an algorithm, but it is a technique. Greedy is an algorithmic paradigm that builds up a solution piece by piece,
+always choosing the next piece that offers the most obvious and immediate benefit. So the problems where choosing locally optimal
+also leads to global solution are the best fit for Greedy.
+
+The following are the characteristics of a greedy method:
+o	To construct the solution in an optimal way, this algorithm creates two sets where one set contains all the chosen items,
+    and another set contains the rejected items.
+o	A Greedy algorithm makes good local choices in the hope that the solution should be either feasible or optimal.
+
+Components of Greedy Algorithm
+The components that can be used in the greedy algorithm are:
+o	Candidate set: A solution that is created from the set is known as a candidate set.
+o	Selection function: This function is used to choose the candidate or subset which can be added in the solution.
+o	Feasibility function: A function that is used to determine whether the candidate or subset can be used to contribute to the solution or not.
+o	Objective function: A function is used to assign the value to the solution or the partial solution.
+o	Solution function: This function is used to intimate whether the complete function has been reached or not.
+
+Applications of Greedy Algorithm
+	It is used in finding the shortest path.
+	It is used to find the minimum spanning tree using the prim's algorithm or the Kruskal's algorithm.
+	It is used in a job sequencing with a deadline.
+	This algorithm is also used to solve the fractional knapsack problem.
+
+Disadvantages of using Greedy algorithm
+Greedy algorithm makes decisions based on the information available at each phase without considering the broader problem.
+So, there might be a possibility that the greedy solution does not give the best solution for every problem.
