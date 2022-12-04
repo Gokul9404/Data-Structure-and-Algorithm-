@@ -1,0 +1,10 @@
+--Principle of optamility--
+A problem is said to be satisfy the Principle of optamility if the sub-solutions
+of and optimal solution of the problem are themselves the optimal solution for their sub-solution.
+
+
+-Optimal Binary Search Tree-
+The frequency and key-value determine the overall cost of searching a node. The cost of searching is a very important factor in various applications.
+The overall cost of searching a node should be less. The time required to search a node in BST is more than the balanced binary search tree as a
+balanced binary search tree contains a lesser number of levels than the BST. There is one way that can reduce the cost of a binary search tree is 
+known as an optimal binary search tree.

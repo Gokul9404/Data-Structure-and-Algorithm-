@@ -1,0 +1,32 @@
+--Dyannamic programming--
+Dyannamic programmingsolves problem by combining the solutions of sub-problems like Divide & conquerer, but it solves
+each problem only once and then saves it's answer in a table, through a avoiding the work of recomputing the answer everytime.\
+
+Where to use?
+-> Overlapping Sub-problem
+    It is mainly used where the solution of one sub-problem is needed repeatedly
+
+-> Optimal Sub-structure
+    A given problem have optimalsub-structure property, if the optimal solution of given probelm can be obtained
+    using optimal solution of its sub-problem.
+
+Steps of Dyannamic Programming approach:
+    -> Characteriss the structure of an optimal solution.
+    -> Recursively define the value of an optimal solution.
+    -> Compute the value of an optimal solution typically in buttom-up fashion.
+    -> Construct an optimal solutionfrom the computed information.
+
+How Does Dynamic Programming Work?
+The steps given below formulate a dynamic programming solution for a given problem:
+    Step 1: It breaks down the broader or complex problem into several smaller subproblems.
+    Step 2: It computes a solution to each subproblem.
+    Step 3: After calculating the result, it remembers the solution to each subproblem (Memorization).
+    Step 4: Reutilize stored result if given subproblem recur.
+    Step 5: Integrate solutions of subproblems to formulate a broader problem’s soluti
+
+
+Dyannamic Programming algos:
+    -> Knapsack 0/1
+    -> Dijkastra's algo
+    -> Floyd Warshal Algo
+    -> Optimal BST
