@@ -1,0 +1,10 @@
+--BackTracking--
+BackTracking is an algorithm technique solving problem recursively by tring to build a solution incremenrtal one peice at a time, 
+removing those solutions that fails to satisfy the constraints of problem at any point of time
+
+Ther are three type of problem in backtracking:-
+    -> Decision problem
+    -> Optimization probelm
+    -> Enumeration problem
+
+Most common example of BackTracking is sukdoku solver.
