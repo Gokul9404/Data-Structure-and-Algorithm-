@@ -1,5 +1,27 @@
 /*
-N Queens Problem is a famous puzzle in which n-queens are to be placed on a nxn chess board such that no two queens are in the same row, column or diagonal.
+N-Queens problem is to place n - queens in such a manner on an n x n chessboard that no queens attack each other by being in the same row, column or diagonal.
+This problem is to find an arrangement of N queens on a chess board, such that no queen can attack any other queens on the board.
+The chess queens can attack in any direction as horizontal, vertical, horizontal and diagonal way.
+A binary matrix is used to display the positions of N Queens, where no queens can attack other queens.
+
+Algorithm
+1) Start in the leftmost column
+2) If all queens are placed
+    return true
+3) Try all rows in the current column. 
+   Do following for every tried row.
+    a) If the queen can be placed safely in this row 
+       then mark this [row, column] as part of the 
+       solution and recursively check if placing
+       queen here leads to a solution.
+    b) If placing the queen in [row, column] leads to
+       a solution then return true.
+    c) If placing queen doesn't lead to a solution then
+       unmark this [row, column] (Backtrack) and go to 
+       step (a) to try other rows.
+4) If all rows have been tried and nothing worked,
+   return false to trigger backtracking.
+
 
 E.g.,   Given a 4x4 chessboard and no. of rows & columns of the chess-board 1 through 4.
         We have o place 4 queens, such as q1, q2, q3, q4 on the chess-board don't attack each other.
