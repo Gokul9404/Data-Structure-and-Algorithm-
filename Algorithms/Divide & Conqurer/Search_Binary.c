@@ -1,5 +1,39 @@
-/*
-    Time Complexcity -> log(n)
+/*Analysis of input size at each iteration of Binary Search:
+
+At Iteration 1:
+Length of array = n
+
+At Iteration 2:
+Length of array = n/2
+
+At Iteration 3:
+Length of array = (n/2)/2 = n/22
+
+At Iteration 4:
+Length of array = (n/22)/2 = n/22
+
+After Iteration k:
+Length of array => n/2k
+
+  (Also, we know that after k iterations, the length of the array becomes 1.)
+  Therefore, the Length of the array will be:-
+Length = n/2k = 1
+ 	 => n = 2k
+
+  Now, applying log function on both sides: 
+=> log2n = log22k
+=> log2n = k * log22        	{we know that: loga (a) = 1 }
+  Therefore, log2(n) = k
+
+  Thus, making the time complexity of binary search:	
+	Best case complexity: 	O(1)
+	Average case complexity: 	O(log n)
+	Worst case complexity: 	O(log n)
+
+   and the Space Complexity of binary search is
+	Space complexity :		O(1) / Constant space
+
+
 */
 
 #include <stdio.h>
