@@ -33,34 +33,12 @@ Time complexity
     => O(n(log(n)).
 
 Algorithm
-    low  –> Starting index,  high  –> Ending index 
-    Quick Sort(arr[], low, high) {
-        if (low < high) {
-            /* pi is partitioning index, arr[pi] is now at right place */
-            pi = partition(arr, low, high);
-            quick Sort(arr, low, pi – 1);  // Before pi
-            quick Sort(arr, pi + 1, high); // After pi
-        }
-    }
-
-    Partition (arr[], low, high){
-    // pivot (Element to be placed at right position)
-    pivot = arr[high];  
-
-    i = (low – 1)  // Index of smaller element and indicates the 
-    // right position of pivot found so far
-    for (j = low; j <= high- 1; j++){
-
-        // If current element is smaller than the pivot
-        if (arr[j] < pivot){
-            i++;    // increment index of smaller element
-            swap arr[i] and arr[j]
-        }
-    }
-    swap arr[i + 1] and arr[high])
-    return (i + 1)
-    }
-
+To solve the problem follow the below idea:
+First convert the array into heap data structure using heapify, than one by one delete the root node of the Max-heap and replace it with the last node in the heap and then heapify the root of the heap. Repeat this process until size of heap is greater than 1.
+Follow the given steps to solve the problem:
+•	Build a max heap from the input data. 
+•	At this point, the maximum element is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of the heap by 1. Finally, heapify the root of the tree. 
+•	Repeat step 2 while the size of the heap is greater than 1.
 
 */
 
