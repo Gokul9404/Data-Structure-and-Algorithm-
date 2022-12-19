@@ -1,7 +1,17 @@
 /*
-    Time Complexcity -> O(n logn)
+The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm.
+In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner
 
-    It divides a array into two parts, and then it sorts the array..
+Algorithm Working :
+Step 1: If the array has not more than one elements then the array has already been sorted.
+
+Step 2: Then we keep the half of the elements of the array in a new array named left and merge sorted them array.
+
+Step 3: Then other half elements of array should kept in right array and merge sorted the array.
+
+Step 4: Finally merge the two merge sorted array.
+
+Time Complexcity -> O(n logn)
 */
 
 #include<stdio.h>
