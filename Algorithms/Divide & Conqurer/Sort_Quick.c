@@ -1,12 +1,21 @@
 /*
-    Time Complexcity -> O(n^2)
+In Quick Sort, we divide the array of items to be sorted into two partitions and then call the quick sort procedure to sort the two partitions.
+To partition the data elements, a pivot element is to be selected,
+such that all the items in the lower part are smaller and the items in the upper part are greater then the pivot items.
 
-    Adaptive Algorithm - Not!
-    Stable Algorithm   - Not!
+There are many different versions of quickSort that pick pivot in different ways. 
+->  Always pick the first element as a pivot.
+->  Always pick the last element as a pivot (implemented below)
+->  Pick a random element as a pivot.
+->  Pick median as the pivot.
+
+Time Complexcity -> O(n^2)
+Adaptive Algorithm - Not!
+Stable Algorithm   - Not!
 
 
 Algorithm:
-low  –> Starting index,  high  –> Ending index 
+    low  –> Starting index,  high  –> Ending index 
     Quick Sort(arr[], low, high) {
         if (low < high) {
             //pi is partitioning index, arr[pi] is now at right place 
@@ -33,9 +42,6 @@ low  –> Starting index,  high  –> Ending index
     swap arr[i + 1] and arr[high])
     return (i + 1)
     }
-
-
-    
 */
 #include<stdio.h>
 
