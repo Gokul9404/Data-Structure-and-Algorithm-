@@ -1,50 +1,58 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
-struct Binary_node{
+struct Binary_node
+{
     int data;
-    struct Binary_node* left;
-    struct Binary_node* right;
+    struct Binary_node *left;
+    struct Binary_node *right;
 };
 
-
-struct Binary_node* Create_node(int dataa){
-    struct Binary_node* node;
-    node = (struct Binary_node *) malloc(sizeof(struct Binary_node));
+struct Binary_node *Create_node(int dataa)
+{
+    struct Binary_node *node;
+    node = (struct Binary_node *)malloc(sizeof(struct Binary_node));
     node->data = dataa;
     node->left = NULL;
     node->right = NULL;
     return node;
 }
 
-int Max_no(int a, int b){
-    return (a>b)? a :b;
+int Max_no(int a, int b)
+{
+    return (a > b) ? a : b;
 }
 
-int max_data_path(struct Binary_node* root){
-    if(root != NULL){
+int max_data_path(struct Binary_node *root)
+{
+    if (root != NULL)
+    {
         int left, right;
         left = right = 0;
-        if (root->left != NULL){
+        if (root->left != NULL)
+        {
             left = max_data_path(root->left);
         }
-        if (root->right != NULL){
-        right = max_data_path(root->right);
+        if (root->right != NULL)
+        {
+            right = max_data_path(root->right);
         }
         int max = Max_no(left, right);
         return (max + root->data);
     }
-    else {
+    else
+    {
         int min = INT_MIN;
-        return min; 
+        return min;
     }
 }
 
-int main(){
+int main()
+{
     /*
     Here created binary tree is like below:-
-                    1 
+                    1
                 3       2
               5   7   4   6
     */
@@ -64,7 +72,7 @@ int main(){
     right->left = right11;
     right->right = right12;
 
-    printf("Path with the largest sum is:- %d",max_data_path(root_node));
+    printf("Path with the largest sum is:- %d", max_data_path(root_node));
 
     return 0;
 }

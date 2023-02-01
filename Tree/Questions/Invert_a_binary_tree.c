@@ -1,31 +1,37 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 //----------------------------------------------------------------------------------
-struct Binary_node{
+struct Binary_node
+{
     int data;
-    struct Binary_node* left;
-    struct Binary_node* right;
+    struct Binary_node *left;
+    struct Binary_node *right;
 };
 
-struct Binary_node* Create_node(int dataa){
-    struct Binary_node* node;
-    node = (struct Binary_node *) malloc(sizeof(struct Binary_node));
+struct Binary_node *Create_node(int dataa)
+{
+    struct Binary_node *node;
+    node = (struct Binary_node *)malloc(sizeof(struct Binary_node));
     node->data = dataa;
     node->left = NULL;
     node->right = NULL;
     return node;
 }
 //----------------------------------------------------------------------------------
-void InOrder(struct Binary_node* root){
-    if(root != NULL){
+void InOrder(struct Binary_node *root)
+{
+    if (root != NULL)
+    {
         InOrder(root->left);
         printf("%d ", root->data);
         InOrder(root->right);
     }
 }
 //----------------------------------------------------------------------------------
-struct Binary_node*  Invert_BT(struct Binary_node* root){
-    if(root == NULL){
+struct Binary_node *Invert_BT(struct Binary_node *root)
+{
+    if (root == NULL)
+    {
         return root;
     }
     struct Binary_node *left, *right;
@@ -38,9 +44,10 @@ struct Binary_node*  Invert_BT(struct Binary_node* root){
     return root;
 }
 //----------------------------------------------------------------------------------
-int main(){
+int main()
+{
     /*  Here created binary tree is like below:-
-                        1 
+                        1
                     3       2
                 5   7       4   6
     */
@@ -52,7 +59,7 @@ int main(){
     right = Create_node(2);
     right11 = Create_node(4);
     right12 = Create_node(6);
-    //------------------------------------------------------------------------------ 
+    //------------------------------------------------------------------------------
     head->left = left;
     head->right = right;
     left->left = left11;
