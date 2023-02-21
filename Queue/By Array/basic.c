@@ -4,17 +4,19 @@
     -> Can be implimented by array, linked list
 */
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-struct Queuue{
+struct Queuue
+{
     int size;
     int front;
     int rear;
     int *array_of_queue;
 };
 
-struct Queuue Create_queue(int size){
+struct Queuue Create_queue(int size)
+{
     struct Queuue queue;
     queue.size = size;
     queue.front = queue.rear = -1;
@@ -22,8 +24,8 @@ struct Queuue Create_queue(int size){
     return queue;
 };
 
-
-int main(){
+int main()
+{
     struct Queuue queue;
     queue = Create_queue(10);
     return 0;
